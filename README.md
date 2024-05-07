@@ -7,4 +7,4 @@ It will be able to control appliances in my house and be able to hack various th
 
 Currently the first iterations will be able to do tasks for me such as ordering pizza.
 
-For KOBY 
+Goodbye.
