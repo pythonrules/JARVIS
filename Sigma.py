@@ -20,6 +20,7 @@ sleep(1)
 keyboard.release("ctrl+c")
 sleep(1)
 
+# Command W For Delete
 text = Paste()
 
 sleep(1)
@@ -33,20 +34,19 @@ def ridder(correct):
     for letter in text:
         if letter == "<":
             trial = counter + 1 
-            if text[trial] == "i":
+            if text[trial] == "a":
                 trial = counter + 2
-                if text[trial] == "n":
+                if text[trial] == " ":
                     trial = counter + 3
-                    if text[trial] == "p":
-                        counter +=3
-                        while letter2 != ">":
-                            increment = trial + counter2
-                            letter2 = text[increment]
-                            correct[-1] = correct[-1] + letter2
-                            counter2 +=1
-                            counter +=1
-                        correct.append("<in")
-                        return counter
+                    counter +=2
+                    while letter2 != ">":
+                        increment = trial + counter2
+                        letter2 = text[increment]
+                        correct[-1] = correct[-1] + letter2
+                        counter2 +=1
+                        counter +=1
+                    correct.append("<a ")
+                    return counter
                     
         trial = 0
         counter +=1
